@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title></title>
+      <link href="/post/1.html"/>
+      <url>/post/1.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="淘县名人语录"><a href="#淘县名人语录" class="headerlink" title="淘县名人语录"></a><strong>淘县名人语录</strong></h2><p>一个连市场都不尊重的人，又凭什么在市场里赚钱。永远尊重市场才是你应该做的事情。</p><p>​——————陈小群</p><p>盘中的交易时间，才是最好的学机会，盘面瞬息万变，盘后再努力，终究要实际操作，就好比纸上谈兵是没用的，你需要克服恐惧，克服交易障碍。</p><p>​——————陈小群</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/post/0.html"/>
+      <url>/post/0.html</url>
+      
+        <content type="html"><![CDATA[<ul><li>彩色文字<br>在一段话中方便插入各种颜色的标签，包括：<span class='p red'>红色</span>、<span class='p yellow'>黄色</span>、<span class='p green'>绿色</span>、<span class='p cyan'>青色</span>、<span class='p blue'>蓝色</span>、<span class='p gray'>灰色</span>。</li><li>超大号文字<br>文档「开始」页面中的标题部分就是超大号文字。<span class='p center logo large'>Volantis</span><span class='p center small'>A Wonderful Theme for Hexo</span></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu下学习Opencv</title>
       <link href="/post/deb5175a.html"/>
       <url>/post/deb5175a.html</url>
       
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己Linux学习过程</code></p></div><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>Linux</code>是一种免费使用和自由传播的类UNIX操作系统，这里用的平台是<code>Ubuntu 20</code>（流畅、方便、屏幕分辨率、Wifi连接很方便），来进行Linux的学习。<br><code>U盘启动制作</code>也很重要，这里用了比较轻巧方便干净绿色的rufus进行启动盘的制作，懒人必备。</p><ul><li><p><code>ubuntu-20.04.5-desktop-amd64.iso</code><br> 百度网盘链接：链接：<a href="https://pan.baidu.com/s/15ua5x2uoMhY5FUnExHk2yw">https://pan.baidu.com/s/15ua5x2uoMhY5FUnExHk2yw</a> 提取码：jnjc </p></li><li><p><code>rufus-3.20.exe</code><br> 百度网盘链接：<a href="https://pan.baidu.com/s/1z1D8JyLpbPjHSsjMsmD4PA">https://pan.baidu.com/s/1z1D8JyLpbPjHSsjMsmD4PA</a> 提取码：gzj6</p></li></ul><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
+        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己Opencv学习过程</code></p></div><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
       
       
       <categories>
@@ -37,7 +63,7 @@
       <link href="/post/deb5175a.html"/>
       <url>/post/deb5175a.html</url>
       
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己Linux学习过程</code></p></div><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>Linux</code>是一种免费使用和自由传播的类UNIX操作系统，这里用的平台是<code>Ubuntu 20</code>（流畅、方便、屏幕分辨率、Wifi连接很方便），来进行Linux的学习。<br><code>U盘启动制作</code>也很重要，这里用了比较轻巧方便干净绿色的rufus进行启动盘的制作，懒人必备。</p><ul><li><p><code>ubuntu-20.04.5-desktop-amd64.iso</code><br> 百度网盘链接：链接：<a href="https://pan.baidu.com/s/15ua5x2uoMhY5FUnExHk2yw">https://pan.baidu.com/s/15ua5x2uoMhY5FUnExHk2yw</a> 提取码：jnjc </p></li><li><p><code>rufus-3.20.exe</code><br> 百度网盘链接：<a href="https://pan.baidu.com/s/1z1D8JyLpbPjHSsjMsmD4PA">https://pan.baidu.com/s/1z1D8JyLpbPjHSsjMsmD4PA</a> 提取码：gzj6</p></li></ul><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
+        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己ROS学习过程</code></p></div><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
       
       
       <categories>
@@ -116,19 +142,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/post/0.html"/>
-      <url>/post/0.html</url>
-      
-        <content type="html"><![CDATA[<ul><li>彩色文字<br>在一段话中方便插入各种颜色的标签，包括：<span class='p red'>红色</span>、<span class='p yellow'>黄色</span>、<span class='p green'>绿色</span>、<span class='p cyan'>青色</span>、<span class='p blue'>蓝色</span>、<span class='p gray'>灰色</span>。</li><li>超大号文字<br>文档「开始」页面中的标题部分就是超大号文字。<span class='p center logo large'>Volantis</span><span class='p center small'>A Wonderful Theme for Hexo</span></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>机械液压</title>
       <link href="/post/2427.html"/>
       <url>/post/2427.html</url>
@@ -148,19 +161,6 @@
             <tag> 学习 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/post/1.html"/>
-      <url>/post/1.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="淘县名人语录"><a href="#淘县名人语录" class="headerlink" title="淘县名人语录"></a><strong>淘县名人语录</strong></h2><p>一个连市场都不尊重的人，又凭什么在市场里赚钱。永远尊重市场才是你应该做的事情。</p><p>​——————陈小群</p><p>盘中的交易时间，才是最好的学机会，盘面瞬息万变，盘后再努力，终究要实际操作，就好比纸上谈兵是没用的，你需要克服恐惧，克服交易障碍。</p><p>​——————陈小群</p>]]></content>
-      
-      
       
     </entry>
     
