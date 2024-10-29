@@ -4,35 +4,6 @@
   
     
     <entry>
-      <title>Ubuntu下学习ROS系统</title>
-      <link href="/post/deb5175a.html"/>
-      <url>/post/deb5175a.html</url>
-      
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己ROS学习过程</code></p></div><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 💓学习篇 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-            <tag> 花里胡哨 </tag>
-            
-            <tag> ROS系统 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ubuntu下学习Opencv</title>
       <link href="/post/deb5175a.html"/>
       <url>/post/deb5175a.html</url>
@@ -54,6 +25,35 @@
             <tag> 花里胡哨 </tag>
             
             <tag> Opencv </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu下学习ROS系统</title>
+      <link href="/post/deb5175a.html"/>
+      <url>/post/deb5175a.html</url>
+      
+        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己ROS学习过程</code></p></div><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 💓学习篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 花里胡哨 </tag>
+            
+            <tag> ROS系统 </tag>
             
         </tags>
       
