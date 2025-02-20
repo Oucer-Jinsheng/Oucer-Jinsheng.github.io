@@ -4,27 +4,25 @@
   
     
     <entry>
-      <title>Ubuntu下学习Opencv</title>
-      <link href="/post/deb5175a.html"/>
-      <url>/post/deb5175a.html</url>
+      <title>试验台的应用</title>
+      <link href="/post/242722.html"/>
+      <url>/post/242722.html</url>
       
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己Opencv学习过程</code></p></div><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="液压系统试验台的应用"><a href="#液压系统试验台的应用" class="headerlink" title="液压系统试验台的应用"></a>液压系统试验台的应用</h1><h2 id="1-试验台的作用"><a href="#1-试验台的作用" class="headerlink" title="1. 试验台的作用"></a>1. 试验台的作用</h2><p>液压系统试验台用于测试液压元件和系统的性能，主要应用于：</p><ul><li><strong>液压泵性能测试</strong></li><li><strong>液压阀流量、压力测试</strong></li><li><strong>液压缸推力、行程测试</strong></li></ul><h2 id="2-试验台的组成"><a href="#2-试验台的组成" class="headerlink" title="2. 试验台的组成"></a>2. 试验台的组成</h2><ul><li><strong>动力部分</strong>：液压泵、驱动电机</li><li><strong>测控系统</strong>：压力传感器、流量计</li><li><strong>负载系统</strong>：液压缸或模拟负载</li></ul><h2 id="3-试验台的安全操作规程"><a href="#3-试验台的安全操作规程" class="headerlink" title="3. 试验台的安全操作规程"></a>3. 试验台的安全操作规程</h2><ul><li>启动前检查油液情况，确保无泄漏。</li><li>试验时缓慢升压，避免突然冲击。</li><li>运行结束后进行系统泄压，防止存压事故。</li></ul>]]></content>
       
       
       <categories>
           
-          <category> 💓学习篇 </category>
+          <category> 💓液压系统 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> 数字孪生 </tag>
             
-            <tag> 花里胡哨 </tag>
-            
-            <tag> Opencv </tag>
+            <tag> 液压系统 </tag>
             
         </tags>
       
@@ -33,23 +31,23 @@
     
     
     <entry>
-      <title>VScode-Opencv-Python</title>
-      <link href="/post/1eb2b536.html"/>
-      <url>/post/1eb2b536.html</url>
+      <title>液压系统维护保养方案</title>
+      <link href="/post/242725.html"/>
+      <url>/post/242725.html</url>
       
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己Opencv学习过程</code></p></div><h1 id="图像处理的基本操作"><a href="#图像处理的基本操作" class="headerlink" title="图像处理的基本操作"></a>图像处理的基本操作</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># import numpy as np</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">1</span>)</span><br><span class="line"><span class="comment"># cv2.namedWindow(&#x27;img&#x27;,cv2.WINDOW_AUTOSIZE)</span></span><br><span class="line"><span class="comment"># print(img)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cv2.destroyAllWindows()</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;获取彩色图像的属性：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;shape=&quot;</span>,img.shape)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;size=&quot;</span>,img.size)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;dtype=&quot;</span>,img.dtype)</span><br><span class="line"></span><br><span class="line">img_gray = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">0</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;获取灰色图像的属性：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;shape=&quot;</span>,img_gray.shape)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;size=&quot;</span>,img_gray.size)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;dtype=&quot;</span>,img_gray.dtype)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&#x27;photo_person&#x27;</span>,img)</span><br><span class="line">cv2.waitKey()</span><br></pre></td></tr></table></figure><h1 id="像素"><a href="#像素" class="headerlink" title="像素"></a>像素</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">1</span>)    <span class="comment">#读取图像</span></span><br><span class="line">px = img[<span class="number">29</span>,<span class="number">20</span>]   <span class="comment">#读取（29，20）上的像素</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;坐标上的像素BGR是&quot;</span>,px)</span><br><span class="line"></span><br><span class="line">blue = img[<span class="number">29</span>,<span class="number">20</span>,<span class="number">0</span>]     <span class="comment">#坐标上像素值B通道的值</span></span><br><span class="line">green = img[<span class="number">29</span>,<span class="number">20</span>,<span class="number">1</span>]     <span class="comment">#坐标上像素值G通道的值</span></span><br><span class="line">red = img[<span class="number">29</span>,<span class="number">20</span>,<span class="number">2</span>]     <span class="comment">#坐标上像素值R通道的值</span></span><br><span class="line"><span class="built_in">print</span>(blue,green,red)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&quot;Person_Photo&quot;</span>,img)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">20</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">20</span>):</span><br><span class="line">        img[i,j]=[<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>]</span><br><span class="line">cv2.imshow(<span class="string">&quot;Person_Photo_after&quot;</span>,img)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows  </span><br></pre></td></tr></table></figure><h1 id="色彩空间"><a href="#色彩空间" class="headerlink" title="色彩空间"></a>色彩空间</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#从BGR色彩空间转换到GRAY色彩空间，cv2.COLOR_BGR2GRAY</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">1</span>)</span><br><span class="line">cv2.imshow(<span class="string">&quot;Person_Photo&quot;</span>,img)</span><br><span class="line"></span><br><span class="line">gray_img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv2.imshow(<span class="string">&quot;Person_Photo_after&quot;</span>,gray_img)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows</span><br></pre></td></tr></table></figure><h1 id="HSV色彩空间"><a href="#HSV色彩空间" class="headerlink" title="HSV色彩空间"></a>HSV色彩空间</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#HSV基于色调、饱和度、亮度,Opencv色调在[0,180]取值</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">1</span>)</span><br><span class="line">cv2.imshow(<span class="string">&quot;Person_Photo&quot;</span>,img)</span><br><span class="line"></span><br><span class="line">HSV_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)</span><br><span class="line">cv2.imshow(<span class="string">&quot;Person_Photo_after&quot;</span>,HSV_img)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows </span><br></pre></td></tr></table></figure><h1 id="通道"><a href="#通道" class="headerlink" title="通道"></a>通道</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#拆分通道</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">1</span>)</span><br><span class="line">cv2.imshow(<span class="string">&quot;person&quot;</span>,img)</span><br><span class="line">b,g,r = cv2.split(img)</span><br><span class="line">cv2.imshow(<span class="string">&quot;B&quot;</span>,b)</span><br><span class="line">cv2.imshow(<span class="string">&quot;G&quot;</span>,g)</span><br><span class="line">cv2.imshow(<span class="string">&quot;R&quot;</span>,r)</span><br><span class="line"></span><br><span class="line">hsv_img = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)</span><br><span class="line">h,s,v = cv2.split(img)</span><br><span class="line">cv2.imshow(<span class="string">&quot;H&quot;</span>,h )</span><br><span class="line">cv2.imshow(<span class="string">&quot;S&quot;</span>,s)</span><br><span class="line">cv2.imshow(<span class="string">&quot;V&quot;</span>,v)</span><br><span class="line"></span><br><span class="line"><span class="comment">#合并B通道图像、G通道图像、R通道图像 </span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">&#x27;img\Oucer-Jinsheng.jpg&#x27;</span>,<span class="number">1</span>)</span><br><span class="line"><span class="comment"># cv2.imshow(&quot;person&quot;,img)</span></span><br><span class="line">b,g,r = cv2.split(img)</span><br><span class="line">rgb = cv2.merge([r,g,b])    <span class="comment">#按RGB的顺序合并通道</span></span><br><span class="line">cv2.imshow(<span class="string">&quot;RGB&quot;</span>,rgb)</span><br><span class="line"></span><br><span class="line">bgr = cv2.merge([b,g,r])    <span class="comment">#按BGR的顺序合并通道</span></span><br><span class="line">cv2.imshow(<span class="string">&quot;BGR&quot;</span>,bgr)</span><br><span class="line"></span><br><span class="line">hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)</span><br><span class="line">h,s,v = cv2.split(hsv_img)</span><br><span class="line">hsv = cv2.merge([h,s,v])</span><br><span class="line">cv2.imshow(<span class="string">&quot;HSV&quot;</span>,hsv)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="液压系统维护保养方案"><a href="#液压系统维护保养方案" class="headerlink" title="液压系统维护保养方案"></a>液压系统维护保养方案</h1><p>液压系统是许多工业机械和设备的关键部分，维护和保养液压系统是确保其长时间高效运作的基础。通过科学的维护保养方案，可以最大限度地延长液压系统的使用寿命，提高其工作效率，减少设备故障。以下是详细的液压系统维护保养方案。</p><hr><h2 id="1-维护目标"><a href="#1-维护目标" class="headerlink" title="1. 维护目标"></a>1. 维护目标</h2><ul><li><strong>确保设备的可靠性</strong>：通过定期检查和保养，预防系统故障，确保设备的连续生产。</li><li><strong>延长液压元件的使用寿命</strong>：减少磨损、腐蚀和其他因素对液压元件的影响。</li><li><strong>提高系统的工作效率</strong>：保持系统内油液清洁，确保液压系统的高效运转。</li></ul><hr><h2 id="2-液压系统组成"><a href="#2-液压系统组成" class="headerlink" title="2. 液压系统组成"></a>2. 液压系统组成</h2><p>液压系统主要由以下部分组成：</p><ul><li><strong>液压泵</strong>：提供液压能，是液压系统的动力源。</li><li><strong>液压缸</strong>：将液压能转换为机械能。</li><li><strong>液压阀</strong>：控制油流的方向、流量、压力等参数。</li><li><strong>油箱和液压油</strong>：储存液压油并提供循环流动。</li><li><strong>油管和连接件</strong>：传输液压油，连接系统各个部件。</li></ul><hr><h2 id="3-维护保养内容"><a href="#3-维护保养内容" class="headerlink" title="3. 维护保养内容"></a>3. 维护保养内容</h2><h3 id="3-1-日常检查"><a href="#3-1-日常检查" class="headerlink" title="3.1 日常检查"></a>3.1 日常检查</h3><h4 id="3-1-1-油位检查"><a href="#3-1-1-油位检查" class="headerlink" title="3.1.1 油位检查"></a>3.1.1 油位检查</h4><ul><li>每天检查液压油的油位，确保油液处于油箱的规定范围内。</li><li>油位过低可能会导致泵空转，油位过高可能会引起溢油。</li></ul><h4 id="3-1-2-油温监控"><a href="#3-1-2-油温监控" class="headerlink" title="3.1.2 油温监控"></a>3.1.2 油温监控</h4><ul><li>检查油温是否在工作范围内，通常油温应保持在30°C到60°C之间。</li><li>高温可能是系统过载或冷却系统故障的信号。</li></ul><h4 id="3-1-3-泄漏检查"><a href="#3-1-3-泄漏检查" class="headerlink" title="3.1.3 泄漏检查"></a>3.1.3 泄漏检查</h4><ul><li>每日检查液压系统各部件的接头、管道、阀门等是否存在油泄漏。</li><li>泄漏可能导致油液浪费，影响设备正常运行。</li></ul><h4 id="3-1-4-油液质量检查"><a href="#3-1-4-油液质量检查" class="headerlink" title="3.1.4 油液质量检查"></a>3.1.4 油液质量检查</h4><ul><li>检查油液的颜色、透明度及气味，发现异常情况要及时更换油液。</li><li>油液污染可能会导致系统磨损和阀门卡滞。</li></ul><h4 id="3-1-5-系统噪音与振动监测"><a href="#3-1-5-系统噪音与振动监测" class="headerlink" title="3.1.5 系统噪音与振动监测"></a>3.1.5 系统噪音与振动监测</h4><ul><li>运行时监听液压系统是否有异常噪音或过度振动，异常声音可能是液压泵、阀门等部件故障的前兆。</li></ul><hr><h3 id="3-2-每月保养"><a href="#3-2-每月保养" class="headerlink" title="3.2 每月保养"></a>3.2 每月保养</h3><h4 id="3-2-1-更换液压油"><a href="#3-2-1-更换液压油" class="headerlink" title="3.2.1 更换液压油"></a>3.2.1 更换液压油</h4><ul><li>根据油液质量检查结果，定期更换液压油。通常每月或按系统使用时间进行更换。</li><li>更换时，清洗油箱和过滤器，避免新油污染。</li></ul><h4 id="3-2-2-清洁油过滤器"><a href="#3-2-2-清洁油过滤器" class="headerlink" title="3.2.2 清洁油过滤器"></a>3.2.2 清洁油过滤器</h4><ul><li>清洁油过滤器，防止油液中杂质进入系统，保持油液的清洁度。</li></ul><h4 id="3-2-3-检查液压泵性能"><a href="#3-2-3-检查液压泵性能" class="headerlink" title="3.2.3 检查液压泵性能"></a>3.2.3 检查液压泵性能</h4><ul><li>检查液压泵的压力和流量，确认其输出符合规定要求。</li><li>检查泵是否出现异响或运行不稳定，必要时进行调整或更换。</li></ul><h4 id="3-2-4-检查油管和接头"><a href="#3-2-4-检查油管和接头" class="headerlink" title="3.2.4 检查油管和接头"></a>3.2.4 检查油管和接头</h4><ul><li>定期检查液压油管和接头，确保没有老化、破裂或松动的现象。</li><li>严格控制管路系统的工作压力和流量，避免过载运行。</li></ul><hr><h3 id="3-3-每季度保养"><a href="#3-3-每季度保养" class="headerlink" title="3.3 每季度保养"></a>3.3 每季度保养</h3><h4 id="3-3-1-检查液压缸密封件"><a href="#3-3-1-检查液压缸密封件" class="headerlink" title="3.3.1 检查液压缸密封件"></a>3.3.1 检查液压缸密封件</h4><ul><li>检查液压缸密封件是否老化、磨损，必要时进行更换。</li><li>密封件损坏可能导致油液泄漏，影响系统效率。</li></ul><h4 id="3-3-2-检查系统工作压力"><a href="#3-3-2-检查系统工作压力" class="headerlink" title="3.3.2 检查系统工作压力"></a>3.3.2 检查系统工作压力</h4><ul><li>使用压力表检查各个部分的工作压力，确保所有压力都在正常范围内。</li><li>如果压力过低，可能是液压油不足，或泵出现故障。</li></ul><h4 id="3-3-3-检查液压阀"><a href="#3-3-3-检查液压阀" class="headerlink" title="3.3.3 检查液压阀"></a>3.3.3 检查液压阀</h4><ul><li>检查阀门和调节阀的工作情况，确保它们动作灵敏，没有卡滞或失灵现象。</li><li>调节阀不准确可能导致系统工作不稳定，甚至发生危险。</li></ul>]]></content>
       
       
       <categories>
           
-          <category> 💓学习篇 </category>
+          <category> 💓液压系统 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Opencv </tag>
+            <tag> 液压系统 </tag>
             
         </tags>
       
@@ -58,27 +56,25 @@
     
     
     <entry>
-      <title>Ubuntu下学习ROS系统</title>
-      <link href="/post/deb5175a.html"/>
-      <url>/post/deb5175a.html</url>
+      <title>液压系统主要组成部分及其功能</title>
+      <link href="/post/24278.html"/>
+      <url>/post/24278.html</url>
       
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己ROS学习过程</code></p></div><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="液压系统主要组成部分及其功能"><a href="#液压系统主要组成部分及其功能" class="headerlink" title="液压系统主要组成部分及其功能"></a>液压系统主要组成部分及其功能</h1><h2 id="1-液压泵"><a href="#1-液压泵" class="headerlink" title="1. 液压泵"></a>1. 液压泵</h2><p>液压泵是液压系统的核心动力源，将机械能转换为液体的压力能。常见的液压泵类型包括：</p><ul><li><strong>齿轮泵</strong>：结构简单，成本低，适用于低压系统。</li><li><strong>柱塞泵</strong>：压力高，效率高，适用于高压系统。</li><li><strong>叶片泵</strong>：运行平稳，适用于中等压力系统。</li></ul><h2 id="2-液压缸"><a href="#2-液压缸" class="headerlink" title="2. 液压缸"></a>2. 液压缸</h2><p>液压缸是一种将液体压力能转换为直线运动机械能的装置，主要分为：</p><ul><li><strong>单作用液压缸</strong>：只能在一个方向上产生动力。</li><li><strong>双作用液压缸</strong>：在两个方向上都能产生动力。</li></ul><h2 id="3-液压马达"><a href="#3-液压马达" class="headerlink" title="3. 液压马达"></a>3. 液压马达</h2><p>液压马达用于将液体压力能转换为旋转机械能，可分为：</p><ul><li><strong>齿轮马达</strong></li><li><strong>叶片马达</strong></li><li><strong>柱塞马达</strong></li></ul><h2 id="4-液压阀"><a href="#4-液压阀" class="headerlink" title="4. 液压阀"></a>4. 液压阀</h2><p>液压阀用于控制液体流动方向、压力和流量，主要包括：</p><ul><li><strong>方向控制阀</strong>（如电磁换向阀）</li><li><strong>压力控制阀</strong>（如溢流阀）</li><li><strong>流量控制阀</strong>（如节流阀）</li></ul>]]></content>
       
       
       <categories>
           
-          <category> 💓学习篇 </category>
+          <category> 💓液压系统 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> 数字孪生 </tag>
             
-            <tag> 花里胡哨 </tag>
-            
-            <tag> ROS系统 </tag>
+            <tag> 液压系统 </tag>
             
         </tags>
       
@@ -87,77 +83,25 @@
     
     
     <entry>
-      <title>Linux学习</title>
-      <link href="/post/deb5175a.html"/>
-      <url>/post/deb5175a.html</url>
-      
-        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>记录自己Linux学习过程</code></p></div><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>Linux</code>是一种免费使用和自由传播的类UNIX操作系统，这里用的平台是<code>Ubuntu 20</code>（流畅、方便、屏幕分辨率、Wifi连接很方便），来进行Linux的学习。<br><code>U盘启动制作</code>也很重要，这里用了比较轻巧方便干净绿色的rufus进行启动盘的制作，懒人必备。</p><ul><li><p><code>ubuntu-20.04.5-desktop-amd64.iso</code><br> 百度网盘链接：链接：<a href="https://pan.baidu.com/s/15ua5x2uoMhY5FUnExHk2yw">https://pan.baidu.com/s/15ua5x2uoMhY5FUnExHk2yw</a> 提取码：jnjc </p></li><li><p><code>rufus-3.20.exe</code><br> 百度网盘链接：<a href="https://pan.baidu.com/s/1z1D8JyLpbPjHSsjMsmD4PA">https://pan.baidu.com/s/1z1D8JyLpbPjHSsjMsmD4PA</a> 提取码：gzj6</p></li></ul><h1 id="遇到的问题和使用技巧"><a href="#遇到的问题和使用技巧" class="headerlink" title="遇到的问题和使用技巧"></a>遇到的问题和使用技巧</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><ul><li><p><code>Ubuntu</code>无法安装第三方软件</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#下载QQlinux版时发现了这个问题，Ubuntu20.04中在浏览器中下载了deb安装包后用下面命令行error了</span></span><br><span class="line">sudo apt install -y /path/to/linuxqq<span class="emphasis">_1.0.1-b1-100_</span>amd64.deb</span><br><span class="line"><span class="section">#出现了命令行中有不支持的deb文件</span></span><br><span class="line"><span class="section">#解决方法如下</span></span><br><span class="line">sudo apt install gdebi-core</span><br><span class="line">sudo gdebi xxxx.deb</span><br></pre></td></tr></table></figure></li><li><p><code>Linux</code>运行QQlinux登录就闪退</p> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#扫完二维码登录后，卡顿一下就自动闪退</span></span><br><span class="line">sudo rm -rf ~/.config/tencent-qq/qq号    #不行就多试几遍就解决了</span><br></pre></td></tr></table></figure></li></ul><h2 id="使用技巧："><a href="#使用技巧：" class="headerlink" title="使用技巧："></a>使用技巧：</h2><p>-<code>更新软件列表</code>sudo apt update<br>-<code>删除目录</code> rm -rf xxxx</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 💓学习篇 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-            <tag> 花里胡哨 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>学厨之鱼香肉丝做法</title>
-      <link href="/post/d4880515.html"/>
-      <url>/post/d4880515.html</url>
-      
-        <content type="html"><![CDATA[<div class="note info flat"><p>文章参考链接：<a href="http://www.meishij.net/chufang/diy/sijiacai/1921565.html">美食杰之鱼香肉丝</a></p></div><h1 id="营养和功效"><a href="#营养和功效" class="headerlink" title="营养和功效"></a>营养和功效</h1><p><code>鱼香肉丝</code>是很多人喜欢吃的一道菜，是一道经典的汉族传统名菜，鱼香是川菜主要传统味型之一，鱼香肉丝以鱼香调味而定名，它的营养成分，主要来自于它的配料很多：</p><ul><li><code>猪肉</code>:猪肉含有丰富的优质蛋白质和必需的脂肪酸,并提供血红素(有机铁)和促进铁吸收的半胱氨酸,能改善缺铁性贫血;具有补肾养血,滋阴润燥的功效;里脊肉含有丰富的优质蛋白,脂肪、胆固醇含量相对较少,一般人群都可食用。</li><li><code>木耳</code>:黑木耳中铁的含量极为丰富,故常吃木耳能养血驻颜,令人肌肤红润,容光焕发,并可防治缺铁性贫血;黑木耳含有维生素K,能减少血液凝块,预防血栓症的发生,有防治动脉粥样硬化和冠心病的作用。</li><li><code>胡萝卜</code>:胡萝卜中含有降糖物质，是糖尿病人的良好食品，胡萝卜中含有琥珀酸钾盐，有助于防止血管硬化，降低胆固醇及有降低血压的作用，胡萝卜中的叶酸能减少冠心病发病因素，还具有强心的作用，胡萝卜的热量比较低，是减肥人群的良好食品，胡萝卜具有健脾消食、润肠通便、杀虫、行气、化滞、补肝明目、清热解毒等功效。</li><li><code>青椒</code>青椒一般可以解热镇痛、缓解肌肉酸疼等。青椒富含水分、维生素A、维生素C、胡萝卜素及碳水化合物等营养成分，青辣椒很辣，能出汗、祛湿、散寒。还能刺激味觉，增进食欲。青辣椒中的辣椒素和维生素C是抗氧化物质，不仅能促进脂肪分解，降低脂肪和体重。还能防止癌细胞癌变和扩散，防止癌症的发生。</li></ul><h1 id="用料"><a href="#用料" class="headerlink" title="用料"></a>用料</h1><div class="btns grid5">            <a href='https://fc1tn.baidu.com/it/u=340580812,3168565257&fm=202&src=780&crossm&mola=new&crop=v1'>  <img src='https://fc1tn.baidu.com/it/u=340580812,3168565257&fm=202&src=780&crossm&mola=new&crop=v1' style="height:90px !important;width:90px !important">  <b>猪肉 300克</b></a><a href='https://t15.baidu.com/it/u=3071398567,2979299315&fm=224&app=112&size=h200&n=0&f=PNG?sec=1661706000&t=5f6fc1f052c724ad86c9944d2018e6ad'>  <img src='https://t15.baidu.com/it/u=3071398567,2979299315&fm=224&app=112&size=h200&n=0&f=PNG?sec=1661706000&t=5f6fc1f052c724ad86c9944d2018e6ad' style="height:90px !important;width:90px !important">  <b>蒜 10克</b></a><a href='https://t13.baidu.com/it/u=1392814843,1300763627&fm=224&app=112&size=h200&n=0&f=JPEG&fmt=auto?sec=1661706000&t=e0caa6dab6f2398ea62c7794a2754542'>  <img src='https://t13.baidu.com/it/u=1392814843,1300763627&fm=224&app=112&size=h200&n=0&f=JPEG&fmt=auto?sec=1661706000&t=e0caa6dab6f2398ea62c7794a2754542' style="height:90px !important;width:90px !important">  <b>青椒 30克</b></a><a href='https://t15.baidu.com/it/u=1009140455,3392517624&fm=58&s=716A6EF8A44A5F47628620790300705B'>  <img src='https://t15.baidu.com/it/u=1009140455,3392517624&fm=58&s=716A6EF8A44A5F47628620790300705B' style="height:90px !important;width:90px !important">  <b>胡萝卜 30克</b></a><a href='https://img0.baidu.com/it/u=3670952111,3102718478&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1661706000&t=d3965839c0f7ccc39f020266a9bdb363'>  <img src='https://img0.baidu.com/it/u=3670952111,3102718478&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1661706000&t=d3965839c0f7ccc39f020266a9bdb363' style="height:90px !important;width:90px !important">  <b>木耳 30克</b></a><a href='http://images.meishij.net/p/20111101/7a9b6f21b05c70688efabe0b91c975f2_60x60.jpg'>  <img src='http://images.meishij.net/p/20111101/7a9b6f21b05c70688efabe0b91c975f2_60x60.jpg' style="height:90px !important;width:90px !important">  <b>红辣椒 10克</b></a><a href='http://site.meishij.net/shicaiimg/103/shicai1353_60x60.jpg'>  <img src='http://site.meishij.net/shicaiimg/103/shicai1353_60x60.jpg' style="height:90px !important;width:90px !important">  <b>油 1勺</b></a><a href='http://images.meishij.net/p/20161024/f62391a4cfa6970b0352c2170ea6ae95_60x60.jpg'>  <img src='http://images.meishij.net/p/20161024/f62391a4cfa6970b0352c2170ea6ae95_60x60.jpg' style="height:90px !important;width:90px !important">  <b>豆瓣酱 2勺</b></a><a href='https://img2.baidu.com/it/u=3256376213,514383213&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1661706000&t=68afff5751e6f747e4725bb229819aab'>  <img src='https://img2.baidu.com/it/u=3256376213,514383213&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1661706000&t=68afff5751e6f747e4725bb229819aab' style="height:90px !important;width:90px !important">  <b>葱 10克</b></a><a href='http://images.meishij.net/p/20111214/f8c7dfc3756fa9bd82f4559f6eeb39ce_60x60.jpg'>  <img src='http://images.meishij.net/p/20111214/f8c7dfc3756fa9bd82f4559f6eeb39ce_60x60.jpg' style="height:90px !important;width:90px !important">  <b>姜 5克</b></a>          </div><ul><li>辅料：盐、糖、醋、耗油、酱油、味精、蛋清、淀粉、料酒</li></ul><h1 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h1><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230498907093.jpg"/></div></div><p style= "text-align:center">1、准备一块新鲜的猪肉洗净沥干水分切成细丝</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230498994918.jpg"/></div></div><p style= "text-align:center">2、肉丝放入容器中打入一个蛋清再放入料酒、淀粉</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230498905562.jpg"/></div></div><p style= "text-align:center">3、肉丝和调料抓匀煨制十分钟</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230498879848.jpg"/></div></div><p style= "text-align:center">4、葱姜蒜切成小粒备用</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230498904059.jpg"/></div></div><p style= "text-align:center">5、准备配料胡萝卜、青椒、木耳、红辣椒切成丝</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499050735.jpg"/></div></div><p style= "text-align:center">6、准备调味料蚝油、一品鲜酱油、糖、醋、盐、味精添加适量清水搅拌均匀</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499086978.jpg"/></div></div><p style= "text-align:center">7、锅中倒入适量底油加热放入葱姜蒜爆香</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499047886.jpg"/></div></div><p style= "text-align:center">8、倒入煨制好的肉丝翻炒</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499060327.jpg"/></div></div><p style= "text-align:center">9、肉丝微微变色放入郫县豆瓣酱</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499154328.jpg"/></div></div><p style= "text-align:center">10、将郫县豆瓣酱和肉丝炒匀</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499171006.jpg"/></div></div><p style= "text-align:center">11、放入配料胡萝卜、青椒、木耳丝大火快速翻炒</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499177004.jpg"/></div></div><p style= "text-align:center">12、最后倒入调味料汁大火开始翻炒均匀入味</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499182200.jpg"/></div></div><p style= "text-align:center">13、准备调味料蚝油、一品鲜酱油、糖、醋、盐、味精添加适量清水搅拌均匀</p><div class="img-wrap"><div class="img-bg"><img class="img" src="https://st-cn.meishij.net/rs/06/129/5469756/n5469756_155230499171230.jpg"/></div></div><p style= "text-align:center">14、最后撒上红辣椒丝简单翻炒一下即可出锅享用</p><h1 id="相关视频"><a href="#相关视频" class="headerlink" title="相关视频"></a>相关视频</h1><iframe src="//player.bilibili.com/player.html?aid=895039062&bvid=BV16P4y1T7QN&cid=556793430&page=1&as_wide=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  align="middle" style="width: 1000px; height: 600px; max-width: 100%" > </iframe>]]></content>
-      
-      
-      <categories>
-          
-          <category> 💓厨艺篇 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厨艺 </tag>
-            
-            <tag> 鱼香肉丝 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>机械液压</title>
+      <title>机械液压系统</title>
       <link href="/post/2427.html"/>
       <url>/post/2427.html</url>
       
-        <content type="html"><![CDATA[<ul><li><p><input checked="" disabled="" type="checkbox"> 流体力学（必修） </p><p><a href="https://www.bilibili.com/video/BV1KJ411Y7p2?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1KJ411Y7p2?spm_id_from=333.337.search-card.all.click</a></p></li><li><p><input checked="" disabled="" type="checkbox"> 液压伺服与比例技术（必修） </p><p><a href="https://www.bilibili.com/video/BV1gb411a7HR?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1gb411a7HR?spm_id_from=333.337.search-card.all.click</a></p></li><li><p><input checked="" disabled="" type="checkbox"> PUMPLINX（选修）</p><p><a href="https://www.bilibili.com/video/BV1q4411X7N9?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1q4411X7N9?spm_id_from=333.337.search-card.all.click</a></p></li><li><p><input checked="" disabled="" type="checkbox"> AMESim（选修） </p><p><a href="https://www.bilibili.com/video/BV1qE411L727/?spm_id_from=333.788.recommend_more_video.1">https://www.bilibili.com/video/BV1qE411L727/?spm_id_from=333.788.recommend_more_video.1</a></p></li><li><p><input checked="" disabled="" type="checkbox"> Fluent（选修） </p><p><a href="https://www.bilibili.com/video/BV1WJ41167Ao?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1WJ41167Ao?spm_id_from=333.337.search-card.all.click</a></p></li><li><p><input checked="" disabled="" type="checkbox"> Creo&#x2F;proe（必修） </p><p><a href="https://huke88.com/route/creo.html?sem=baidu&amp;kw=112823&amp;renqun_youhua=1872178&amp;bd_vid=7969326081943180140">https://huke88.com/route/creo.html?sem=baidu&amp;kw=112823&amp;renqun_youhua=1872178&amp;bd_vid=7969326081943180140</a></p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="液压系统概述"><a href="#液压系统概述" class="headerlink" title="液压系统概述"></a>液压系统概述</h1><h2 id="1-什么是液压系统？"><a href="#1-什么是液压系统？" class="headerlink" title="1. 什么是液压系统？"></a>1. 什么是液压系统？</h2><p>液压系统是一种利用液体压力传递能量和控制运动的动力传动系统。它广泛应用于机械、航空航天、汽车制造、船舶、工程设备等多个领域。</p><h2 id="2-液压系统的工作原理"><a href="#2-液压系统的工作原理" class="headerlink" title="2. 液压系统的工作原理"></a>2. 液压系统的工作原理</h2><p>液压系统主要通过液压泵将机械能转换为液体的压力能，并通过控制阀调节流体流动，使执行元件（如液压缸或液压马达）产生所需的运动。</p><h3 id="基本组成部分"><a href="#基本组成部分" class="headerlink" title="基本组成部分"></a><strong>基本组成部分</strong></h3><ul><li><strong>动力元件</strong>：液压泵，将机械能转换为液体压力能。</li><li><strong>执行元件</strong>：液压缸或液压马达，将液体压力能转换为机械能。</li><li><strong>控制元件</strong>：液压阀，包括方向阀、流量阀、压力阀等。</li><li><strong>辅助元件</strong>：液压油、管路、冷却器、过滤器等。</li></ul><h2 id="3-液压系统的优缺点"><a href="#3-液压系统的优缺点" class="headerlink" title="3. 液压系统的优缺点"></a>3. 液压系统的优缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a><strong>优点</strong></h3><ul><li>传递动力大，能实现高精度控制。</li><li>运动平稳，可实现无级变速。</li><li>结构紧凑，功率密度高。</li></ul><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a><strong>缺点</strong></h3><ul><li>液压油易受污染，影响系统性能。</li><li>能量转换效率较低，存在一定损耗。</li><li>需要定期维护，防止泄漏。</li></ul>]]></content>
       
       
       <categories>
           
-          <category> 学习篇 </category>
+          <category> 💓液压系统 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 学习 </tag>
+            <tag> 数字孪生 </tag>
+            
+            <tag> 液压系统 </tag>
             
         </tags>
       
@@ -166,23 +110,79 @@
     
     
     <entry>
-      <title>读八爷语录有感</title>
-      <link href="/post/402.html"/>
-      <url>/post/402.html</url>
+      <title>液压试验台安全操作规程</title>
+      <link href="/post/deb5175a.html"/>
+      <url>/post/deb5175a.html</url>
       
-        <content type="html"><![CDATA[<ol><li>踏空并不可怕，不要因为上涨时空仓乱了节奏，只要不亏钱赚点也挺好</li><li>每次买入之前都应该有自己的买入理由，凡是亏损了都应该总结自己的亏损操作，以后避免经常亏损的操作模式，不要有侥幸，做到减少亏损次数来提高盈利</li><li>稳定的盈利其实就是一种胜率大的模式的复制，这种复制模式每两年左右需要再次更新,复利无敌</li><li>一定不要加杠杆，集中短线做自己把握最大的票，获得最高的收益</li><li>每隔十天更新一下自己的股票池，每隔1个月时间翻看一下所有股票，根据板块热点、题材、政策、资金流或者符合自己操作形态的股票加入到自己的自选股</li><li>心情烦躁的时候，就清空账户休息几天，甚至1-2周，调整好心态</li><li>当股吧里的散户们都集中看好一支票的时候，这只票是时候调整了</li><li>技术指标配合盘感分析，才能进一步提高胜率，需要通过长时间的盯盘，做到提前分析出盘面下一步的变化</li><li>刚刚跌破上升通道的股票不要买，一般都会先有个远离通道的动作！</li><li>快要st的股票不要买（连续两年亏损）</li><li>吃不准的时候宁愿空仓，也不要去尝试不确定的操作，忍受不了寂寞的人终究规避不了下跌的风险</li><li>卖掉的股票即使翻倍又与我何干，每次几个点就够了</li><li>大盘走势和人的情绪是反向行走的，一般会像擦汗一两天，大盘进入亢奋期的时候往往短线的调整就要来了，大盘从恐慌到绝望的时候，往往大盘就见底了</li><li>知行合一很重要！！！</li></ol>]]></content>
+        <content type="html"><![CDATA[<div class="note info flat"><p>初学者Tips：<code>学习液压系统试验台安全操作规程</code></p></div><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>液压系统试验台</code>广泛应用于液压元件及系统的性能测试、故障诊断和产品验证，是液压技术研究与应用中的重要设备。由于液压系统通常涉及高压油路、复杂的机械结构及电控系统，其操作具有一定的安全风险。因此，学习和掌握液压系统试验台的安全操作规程至关重要。<br><code>安全操作规程</code>旨在规范液压试验台的操作流程，提高设备使用的安全性和可靠性，预防操作过程中可能出现的人员伤害和设备损坏。通过系统学习安全操作规程，操作人员能够正确识别液压系统的潜在风险，掌握安全启停、压力调节、泄压管理、故障处理及维护保养等关键环节，确保试验工作的顺利进行。同时，严格执行安全规范不仅能延长设备使用寿命，还能提升实验数据的准确性和实验效率，为液压系统的研究、开发和应用提供有力保障。</p><h1 id="试验台使用技巧"><a href="#试验台使用技巧" class="headerlink" title="试验台使用技巧"></a>试验台使用技巧</h1><h2 id="技巧："><a href="#技巧：" class="headerlink" title="技巧："></a>技巧：</h2><ul><li>操作人员必须熟悉液压台的性能、结构、工作范围及其他电器开关、旋钮、仪表的操纵及使用方法，未经过操作训练者不能上试验台操作。</li><li>启动试验台之前，须仔细检查各液压阀门旋钮是否在指定的位置，然后才能接通电源总开关，开机工作。</li><li>严格按照试验台使用说明书指定的操作步骤工作，不得随意拨弄各旋钮和点开关后自行操作程序。</li><li>操作过程中须集中精力，随时观察试验台的运转状态，若发现异响或运行故障时，应立即关闭电源开关，待查明原因并做好响应的处理后，方能重新启动试验台。</li><li>试验台使用完毕后，应使各操纵旋钮处于正常关闭状态，并作常规的维护保养。</li><li>保持各液压元件及液压设备的清洁，经常检查各液压阀、管路及接头处的泄露及疏闭状态，以免造成因堵塞而损坏液压元件现象。</li><li>出现设备事故时，应保留现场，并立即向上报告事故发生经过，以便查找原因，明确事故的性质，杜绝事故的再次发生。</li></ul>]]></content>
       
       
       <categories>
           
-          <category> 财富篇 </category>
+          <category> 💓液压试验台 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 财富 </tag>
+            <tag> 数字孪生 </tag>
+            
+            <tag> 液压系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数字孪生液压系统</title>
+      <link href="/post/2427899.html"/>
+      <url>/post/2427899.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="数字孪生液压系统"><a href="#数字孪生液压系统" class="headerlink" title="数字孪生液压系统"></a>数字孪生液压系统</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p><code>数字孪生技术</code>（Digital Twin, DT）是指通过将物理实体、过程或系统与虚拟模型进行关联，使得虚拟模型能够实时反映物理系统的状态、行为和性能。液压系统广泛应用于各种机械设备中，特别是在工程机械、航空航天、自动化控制等领域。然而，传统液压系统往往依赖于离线的监控和维护方法，导致难以及时发现故障、优化性能。因此，将数字孪生技术应用于液压系统，可以实现实时监控、预测维护和优化决策，从而提高系统的可靠性、效率和安全性。</p><h2 id="数字孪生液压系统的架构"><a href="#数字孪生液压系统的架构" class="headerlink" title="数字孪生液压系统的架构"></a>数字孪生液压系统的架构</h2><p><code>数字孪生液压系统</code>通常由以下几个关键部分组成：</p><ol><li><p><strong>物理液压系统</strong>：包括液压泵、阀门、执行器、传感器等组件。物理系统用于执行实际任务，并产生实时数据。</p></li><li><p><strong>虚拟模型</strong>：虚拟模型基于物理系统的数学模型和历史数据构建，能够模拟液压系统的行为、性能和响应。这些模型可以通过CFD（计算流体力学）模拟、有限元分析等方法进行精确建模。</p></li><li><p><strong>数据采集与传感器网络</strong>：通过传感器和数据采集系统，实时监控液压系统的各项指标，如压力、流量、温度、油位等。这些数据可以为虚拟模型提供输入，帮助实时更新虚拟模型的状态。</p></li><li><p><strong>数据通信与集成</strong>：物理系统与虚拟模型之间的实时数据交换，通过物联网（IoT）技术实现。液压系统的实时数据通过通信网络传输至云平台或本地计算平台进行分析和决策。</p></li><li><p><strong>智能分析与决策支持</strong>：利用机器学习、数据挖掘等技术，分析液压系统的运行数据，进行故障预测、性能评估和优化决策。例如，可以基于历史数据和实时传感器数据，预测液压系统的故障发生时间，从而提前进行维修，减少停机时间。</p></li></ol><h2 id="数字孪生液压系统的关键技术"><a href="#数字孪生液压系统的关键技术" class="headerlink" title="数字孪生液压系统的关键技术"></a>数字孪生液压系统的关键技术</h2><ol><li><p><strong>建模与仿真技术</strong><br>对液压系统进行建模和仿真是数字孪生液压系统的基础。通常，液压系统的模型包括流体力学模型、热力学模型和机械模型。建模方法可以采用数学公式、有限元分析（FEA）或计算流体力学（CFD）模拟。这些模型能够准确地描述液压系统在不同工作条件下的行为和响应。</p></li><li><p><strong>实时数据采集与传输</strong><br>数字孪生液压系统依赖于实时数据采集与传输技术。通过安装在液压系统中的传感器（如压力传感器、流量传感器、温度传感器等），可以获取系统的实时运行数据。通过物联网（IoT）技术，实时数据可以传输到云平台或本地计算机，供分析和决策使用。</p></li><li><p><strong>故障诊断与预测技术</strong><br>结合机器学习和数据分析技术，数字孪生液压系统能够进行故障诊断与预测。通过分析实时数据和历史数据，可以建立系统的健康模型，实时监控液压系统的状态，并预测可能的故障。常用的技术包括支持向量机（SVM）、人工神经网络（ANN）和深度学习（DL）等。</p></li><li><p><strong>优化控制与决策支持</strong><br>数字孪生液压系统还可以通过优化控制算法来提高系统性能。例如，使用遗传算法、粒子群优化（PSO）或强化学习算法对液压系统的工作状态进行优化，达到节能、减排、提高效率等目标。此外，决策支持系统还可以帮助维护人员根据实时数据和预测结果进行决策，及时调整操作参数，延长设备使用寿命。</p></li></ol><h2 id="数字孪生液压系统的应用"><a href="#数字孪生液压系统的应用" class="headerlink" title="数字孪生液压系统的应用"></a>数字孪生液压系统的应用</h2><ol><li><p><strong>故障预测与维护</strong><br>传统液压系统的维护通常依赖于周期性检查或故障发生后的修复。而数字孪生液压系统通过实时监控、故障诊断和预测分析，能够提前识别潜在故障，减少设备停机时间，降低维护成本。这种基于数据驱动的预测维护方法，能够在系统出现问题之前进行干预，延长设备的使用寿命。</p></li><li><p><strong>性能优化</strong><br>通过对液压系统的虚拟模型进行优化，数字孪生技术能够提高液压系统的整体性能。通过优化控制算法、调整系统参数，能够实现更高的能效、更低的排放、更好的响应性能等。</p></li><li><p><strong>系统调试与测试</strong><br>在液压系统的开发和生产阶段，数字孪生技术能够加速系统的调试和测试过程。通过虚拟模型进行仿真测试，可以在实际系统搭建之前进行各种情境下的模拟，提前发现设计中的问题，降低实验成本和时间。</p></li><li><p><strong>智能决策支持</strong><br>数字孪生液压系统还能够为操作员和维护人员提供智能决策支持。系统通过实时数据和预测结果，为操作员提供调整建议和维护提示，帮助他们做出更加准确和高效的决策。</p></li></ol><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>数字孪生液压系统是液压技术与数字化、智能化相结合的产物，它为液压系统的实时监控、故障诊断、性能优化和决策支持提供了强有力的技术手段。随着物联网、大数据、人工智能等技术的不断发展，数字孪生技术将在液压系统的应用中发挥越来越重要的作用，推动液压技术向更加智能化、自动化和高效化的方向发展。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 💓数字孪生 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数字孪生 </tag>
+            
+            <tag> 液压系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>液压系统常见故障分析与排除</title>
+      <link href="/post/242789.html"/>
+      <url>/post/242789.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="液压系统常见故障分析与排除"><a href="#液压系统常见故障分析与排除" class="headerlink" title="液压系统常见故障分析与排除"></a>液压系统常见故障分析与排除</h1><h2 id="1-压力不足"><a href="#1-压力不足" class="headerlink" title="1. 压力不足"></a>1. 压力不足</h2><h3 id="可能原因"><a href="#可能原因" class="headerlink" title="可能原因"></a><strong>可能原因</strong></h3><ul><li>液压泵磨损严重，输出压力下降。</li><li>溢流阀设定压力过低或损坏。</li><li>管路或接头泄漏，造成压力损失。</li></ul><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a><strong>解决方法</strong></h3><ul><li>检查液压泵，必要时更换。</li><li>调整或更换溢流阀。</li><li>检查管路连接是否牢固，并修复泄漏点。</li></ul><h2 id="2-执行元件运动异常"><a href="#2-执行元件运动异常" class="headerlink" title="2. 执行元件运动异常"></a>2. 执行元件运动异常</h2><h3 id="可能原因-1"><a href="#可能原因-1" class="headerlink" title="可能原因"></a><strong>可能原因</strong></h3><ul><li>液压油中有空气或污染物。</li><li>液压缸密封损坏，导致内泄漏。</li><li>控制阀堵塞或失灵。</li></ul><h3 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a><strong>解决方法</strong></h3><ul><li>排除液压油中的空气，清洁油液。</li><li>更换液压缸密封件。</li><li>清洗或更换控制阀。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 💓液压系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数字孪生 </tag>
+            
+            <tag> 液压系统 </tag>
             
         </tags>
       
